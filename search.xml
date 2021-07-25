@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Python round() 函数</title>
+      <link href="2021/07/25/python-round-han-shu/"/>
+      <url>2021/07/25/python-round-han-shu/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;&gt;&gt; round(3.5)4&gt;&gt;&gt; round(2.5)2&gt;&gt;&gt; round(5.5)6&gt;&gt;&gt; round(6.5)6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>python3中round()函数通常的行为是四舍五入, 但是当需要四舍五入的位数上是5时, 会收到前一位数的影响, 上面的例子里:</p><ul><li>前一位为偶数, 则退一</li><li>前一位为基数, 则进一</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> round </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GitHub 访问速度慢解决方法 国内友好版</title>
       <link href="2021/05/21/github-fang-wen-su-du-man-jie-jue-fang-fa-guo-nei-you-hao-ban/"/>
       <url>2021/05/21/github-fang-wen-su-du-man-jie-jue-fang-fa-guo-nei-you-hao-ban/</url>

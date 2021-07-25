@@ -6,7 +6,7 @@
   <link href="https://torch-fan.site/atom.xml" rel="self"/>
   
   <link href="https://torch-fan.site/"/>
-  <updated>2021-05-21T01:33:11.856Z</updated>
+  <updated>2021-07-25T08:16:48.042Z</updated>
   <id>https://torch-fan.site/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python round() 函数</title>
+    <link href="https://torch-fan.site/2021/07/25/python-round-han-shu/"/>
+    <id>https://torch-fan.site/2021/07/25/python-round-han-shu/</id>
+    <published>2021-07-25T08:12:33.000Z</published>
+    <updated>2021-07-25T08:16:48.042Z</updated>
+    
+    <content type="html"><![CDATA[<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&gt;&gt;&gt; round(3.5)4&gt;&gt;&gt; round(2.5)2&gt;&gt;&gt; round(5.5)6&gt;&gt;&gt; round(6.5)6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>python3中round()函数通常的行为是四舍五入, 但是当需要四舍五入的位数上是5时, 会收到前一位数的影响, 上面的例子里:</p><ul><li>前一位为偶数, 则退一</li><li>前一位为基数, 则进一</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre class=&quot;line-numbers language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&amp;gt;&amp;gt;&amp;gt; round(3.5)
+4
+&amp;gt;&amp;gt;&amp;gt; round(2.5</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://torch-fan.site/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://torch-fan.site/tags/python/"/>
+    
+    <category term="round" scheme="https://torch-fan.site/tags/round/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub 访问速度慢解决方法 国内友好版</title>
@@ -433,35 +461,6 @@
     
     
     <category term="网址" scheme="https://torch-fan.site/tags/%E7%BD%91%E5%9D%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub 帮你找缺陷</title>
-    <link href="https://torch-fan.site/2021/04/29/github-bang-ni-zhao-que-xian/"/>
-    <id>https://torch-fan.site/2021/04/29/github-bang-ni-zhao-que-xian/</id>
-    <published>2021-04-29T10:05:18.000Z</published>
-    <updated>2021-05-14T11:39:07.368Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1-进入市场"><a href="#1-进入市场" class="headerlink" title="1. 进入市场"></a>1. 进入<code>市场</code></h2><blockquote><p> <a href="https://github.com/marketplace">https://github.com/marketplace</a></p></blockquote><p>GitHub的marketplace中有很多的app，偶然我发现一款名为：<code>CodeFactor</code>的App，它能够对代码进行自动reviews并给出issue</p><h2 id="2-使用CodeFactor"><a href="#2-使用CodeFactor" class="headerlink" title="2. 使用CodeFactor"></a>2. 使用CodeFactor</h2><h3 id="1-集成CodeFactor："><a href="#1-集成CodeFactor：" class="headerlink" title="1. 集成CodeFactor："></a>1. 集成CodeFactor：</h3><blockquote><p><a href="https://github.com/marketplace/codefactor">https://github.com/marketplace/codefactor</a></p></blockquote><h3 id="2-安装CodeFactor"><a href="#2-安装CodeFactor" class="headerlink" title="2. 安装CodeFactor:"></a>2. 安装CodeFactor:</h3><blockquote><p><a href="https://www.codefactor.io/dashboard">https://www.codefactor.io/dashboard</a></p></blockquote><p>在GitHub中集成CodeFactor后，前往CodeFactor的控制台，为仓库添加CodeFactor。</p><p>除此以外，还可以为每个仓库添加额外的功能。</p><p><img src="/loading.gif" data-original="https://z3.ax1x.com/2021/04/29/gky46H.png" alt="可添加的额外功能"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;1-进入市场&quot;&gt;&lt;a href=&quot;#1-进入市场&quot; class=&quot;headerlink&quot; title=&quot;1. 进入市场&quot;&gt;&lt;/a&gt;1. 进入&lt;code&gt;市场&lt;/code&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt; &lt;a href=&quot;https://github.c</summary>
-      
-    
-    
-    
-    <category term="Git" scheme="https://torch-fan.site/categories/Git/"/>
-    
-    <category term="Tools" scheme="https://torch-fan.site/categories/Git/Tools/"/>
-    
-    
-    <category term="BUG" scheme="https://torch-fan.site/tags/BUG/"/>
-    
-    <category term="GitHub APP" scheme="https://torch-fan.site/tags/GitHub-APP/"/>
     
   </entry>
   
