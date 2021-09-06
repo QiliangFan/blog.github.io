@@ -6,7 +6,7 @@
   <link href="https://torch-fan.site/atom.xml" rel="self"/>
   
   <link href="https://torch-fan.site/"/>
-  <updated>2021-09-01T06:15:46.321Z</updated>
+  <updated>2021-09-06T13:52:52.275Z</updated>
   <id>https://torch-fan.site/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>求众数</title>
+    <link href="https://torch-fan.site/2021/09/06/qiu-zhong-shu/"/>
+    <id>https://torch-fan.site/2021/09/06/qiu-zhong-shu/</id>
+    <published>2021-09-06T13:52:05.000Z</published>
+    <updated>2021-09-06T13:52:52.275Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>有的人看到求众数就不屑一顾 😕<br> 真是的…</p></blockquote><h1 id="1-众数的定义"><a href="#1-众数的定义" class="headerlink" title="1. 众数的定义"></a>1. 众数的定义</h1><blockquote><p> 一个序列中， 如果一个数的出现次数超过序列长度的一半， 则其为众数<br> [1, 2, 4, 3, 3, 3] 中3虽然出现的次数最多，但不是众数！</p></blockquote><h1 id="2-求候选众数"><a href="#2-求候选众数" class="headerlink" title="2. 求候选众数"></a>2. 求候选众数</h1><blockquote><p>之所以叫做候选， 是因为众数要求出现次数超过序列长度的一半，求出众数后要检查</p></blockquote><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">template</span> <span class="token operator">&lt;</span><span class="token keyword">typename</span> <span class="token class-name">T</span><span class="token operator">&gt;</span> T <span class="token function">majEleCandidate</span> <span class="token punctuation">(</span>Vector<span class="token operator">&lt;</span>T<span class="token operator">&gt;</span> A<span class="token punctuation">)</span> <span class="token punctuation">{</span>T maj<span class="token punctuation">;</span> <span class="token comment">// 众数候选者</span><span class="token comment">// 线性扫描: 借助计数器c, 记录maj与其他元素的数量差额</span><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> c<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> A<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token number">0</span> <span class="token operator">==</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// 当c归零时, 意味着前缀可减除</span>maj <span class="token operator">=</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> c<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// 众数候选者改为新的当前元素</span><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>  <span class="token comment">// 否则</span>maj <span class="token operator">==</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">?</span> c<span class="token operator">++</span> <span class="token operator">:</span> c<span class="token operator">--</span><span class="token punctuation">;</span>  <span class="token comment">// 更新计数器</span><span class="token punctuation">}</span>  <span class="token punctuation">}</span><span class="token keyword">return</span> maj<span class="token punctuation">;</span>  <span class="token comment">// 至此, 原向量的众数若是存在, 则只能是maj, 反之则不然</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>有的人口上对众数不屑一顾, 求众数的算法却都看不懂, 只会暴力, 😕</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;有的人看到求众数就不屑一顾 😕&lt;br&gt; 真是的…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-众数的定义&quot;&gt;&lt;a href=&quot;#1-众数的定义&quot; class=&quot;headerlink&quot; title=&quot;1. 众数的定义&quot;&gt;&lt;/a&gt;1. 众</summary>
+      
+    
+    
+    
+    
+    <category term="数据结构与算法" scheme="https://torch-fan.site/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>快速排序</title>
@@ -434,29 +459,6 @@
     <category term="cuda" scheme="https://torch-fan.site/tags/cuda/"/>
     
     <category term="GPU" scheme="https://torch-fan.site/tags/GPU/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu18.04 安装mysql</title>
-    <link href="https://torch-fan.site/2021/05/04/ubuntu18-04-an-zhuang-mysql/"/>
-    <id>https://torch-fan.site/2021/05/04/ubuntu18-04-an-zhuang-mysql/</id>
-    <published>2021-05-04T01:45:55.000Z</published>
-    <updated>2021-05-14T11:39:00.917Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1-安装MySQL"><a href="#1-安装MySQL" class="headerlink" title="1. 安装MySQL"></a>1. 安装MySQL</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> update<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> mysql-server  <span class="token comment"># mysql-5.7</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="2-配置MySQL"><a href="#2-配置MySQL" class="headerlink" title="2. 配置MySQL"></a>2. 配置MySQL</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> mysql_secure_installation<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这一步的作用是: </p><ul><li>配置root密码</li><li>配置root是否可远程访问</li><li>… (其他基本配置)</li></ul><h2 id="3-访问MySQL"><a href="#3-访问MySQL" class="headerlink" title="3. 访问MySQL"></a>3. 访问MySQL</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 通过root用户访问mysql是通过auth_socket插件验证而非通过密码验证</span>$ <span class="token function">sudo</span> mysql<span class="token comment"># 普通用户访问mysql需要输入用户名和密码通过密码验证</span>$ mysql -u root -p<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="4-创建用户或者修改密码"><a href="#4-创建用户或者修改密码" class="headerlink" title="4. 创建用户或者修改密码"></a>4. 创建用户或者修改密码</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># mysql 验证插件: caching_sha2_password</span>mysql<span class="token operator">&gt;</span> CREATE <span class="token environment constant">USER</span> <span class="token string">'USER'</span>@<span class="token string">'HOST'</span> IDENTIFIED BY <span class="token string">'PASSWD'</span><span class="token punctuation">;</span>mysql<span class="token operator">&gt;</span> ALTER <span class="token environment constant">USER</span> <span class="token string">'USER'</span>@<span class="token string">'HOST'</span> IDENTIFIED BY <span class="token string">'PASSWD'</span><span class="token punctuation">;</span><span class="token comment"># 如果上面那条指令报错, 说明mysql验证密码的方式是另一种插件: mysql_native_password</span>mysql<span class="token operator">&gt;</span> CREATE <span class="token environment constant">USER</span> <span class="token string">'USER'</span>@<span class="token string">'HOST'</span> IDENTIFIED WITH mysql_native_password BY <span class="token string">'PASSWORD'</span><span class="token punctuation">;</span><span class="token comment"># 在这种插件下, 修改密码的方式也不一样:</span>mysql<span class="token operator">&gt;</span> ALTER <span class="token environment constant">USER</span> <span class="token string">'USER'</span>@<span class="token string">'HOST'</span> IDENTIFIED WITH mysql_native_password BY <span class="token string">'PASSWORD'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-    
-    
-    <summary type="html">Ubuntu 18.04下安装MySQL 5.7</summary>
-    
-    
-    
-    <category term="Linux" scheme="https://torch-fan.site/categories/Linux/"/>
-    
-    <category term="Tools" scheme="https://torch-fan.site/categories/Linux/Tools/"/>
-    
-    
-    <category term="MySQL" scheme="https://torch-fan.site/tags/MySQL/"/>
     
   </entry>
   
